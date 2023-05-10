@@ -1,0 +1,66 @@
+/*---------------------------------------Base styles for common elements---------------------------------------*/
+
+:root {
+    --green: rgba(1, 153, 109, 1);
+    --dark-green: rgba(36, 88, 82, 1);
+    --white: rgba(255, 255, 255, 1);
+    --light-grey: rgba(214, 214, 214, 1);
+    --grey: rgba(72, 72, 72, 1);
+}
+
+html,
+body {
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--green);
+}
+
+h1 {
+    font-family: "Avenir", sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 2.75rem;
+}
+
+h2 {
+    font-family: "Georgia", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3.7rem;
+}
+
+h3 {
+    font-family: "Georgia", sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+button {
+    padding: 1rem 2.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    border: none;
+    border-radius: 0.2rem;
+    background-color: var(--green);
+}
+
+section:nth-of-type(n+2) {
+    padding: 0 10%
+}
+
+section:nth-of-type(n+2):nth-of-type(odd) {
+    /*изменить на практике*/
+    background-color: var(--dark-green);
+}
