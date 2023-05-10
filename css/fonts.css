@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Lato";
+    src: url(/fonts/Lato-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(/fonts/Lato-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(/fonts/Lato-Semibold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Georgia";
+    src: url(/fonts/Georgia-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Georgia";
+    src: url(/fonts/Georgia-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url(/fonts/Avenir-Black.ttf);
+    font-weight: 900;
+}
+
