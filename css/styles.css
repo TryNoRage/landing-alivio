@@ -27,10 +27,11 @@ h1 {
 }
 
 h2 {
+    margin-bottom: 1rem;
     font-family: "Georgia", sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
-    line-height: 3.7rem;
+    line-height: 3.5rem;
 }
 
 h3 {
@@ -41,10 +42,11 @@ h3 {
 }
 
 p {
+    margin-bottom: 2rem;
     font-family: "Lato", sans-serif;
     font-weight: 500;
     font-size: 1rem;
-    line-height: 1.2rem;
+    line-height: 1.5rem;  
 }
 
 a {
@@ -75,6 +77,10 @@ section:nth-of-type(n+2):nth-of-type(odd) {
     background-color: var(--dark-green);
 }
 
+.content {
+    inline-size: 27.5rem;
+    padding: 4rem;
+}
 /*---------------------------------------Styles for header block---------------------------------------*/
 
 header {
@@ -94,9 +100,43 @@ nav {
     justify-content: center;
     align-items: center;
     column-gap: 2.75rem;
+    text-align: center;
 }
 
 hr {
     margin: 0;
     border: 1px solid var(--light-grey);
 }
+
+
+/*---------------------------------------Styles for banner block---------------------------------------*/
+
+
+
+.banner {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 44.75rem;
+    background-image: url(/images/banner.png);/* закончить градиент */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+}
+
+.banner .content{
+    inline-size: 22rem;
+}
+
+.banner .content h2{
+    font-size: 3.25rem;
+}
+
+.banner .content p{
+   font-weight: 400;
+   color:var(--grey);
+}
+
+
+/*---------------------------------------Styles for grid block---------------------------------------*/
