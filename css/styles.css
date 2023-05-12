@@ -206,31 +206,123 @@ hr {
 /*---------------------------------------Styles for video block---------------------------------------*/
 
 
-.video-content{
+.video-content {
     display: flex;
     justify-content: center;
     padding: 11.5rem 0 9rem;
 }
 
-.video-description{
+.video-description {
     width: 27.5rem;
 }
 
-.video-description p{
+.video-description p {
     font-weight: 600;
     font-size: 1.25rem;
     color: white;
 }
 
-.video-description h2{
+.video-description h2 {
     font-size: 2.5rem;
     color: white;
 }
 
-.video{
-    background-image: url(/images/video.png) ;
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/video.png);
     background-repeat: no-repeat;
     width: 44.75rem;
     height: 25.75rem;
-    border-radius:0.8rem;
+    border-radius: 0.8rem;
 }
+
+
+/*---------------------------------------Styles for product block---------------------------------------*/
+
+.product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5.75rem 0;
+}
+
+.product-description {
+    width: 29.2rem;
+}
+
+.product-description p:first-child {
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-bottom: 0rem;
+}
+
+.product-description h2 {
+    margin-top: 1rem;
+}
+
+
+.product-description p {
+    width: 26.5rem;
+}
+
+.card-parent {
+    position: relative;
+    height: 28.65rem;
+    width: 32rem;
+    background-color: rgba(1, 153, 109, 0.2);
+    background-image: url(/images/woman.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    border-radius: 0.9rem;
+}
+
+.card{
+    position: absolute;
+    bottom: -4rem;
+    left: -3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius:0.2rem;
+    width: 14.5rem;
+    height: 14.5rem;
+    text-align: center;
+    background-color: var(--white);
+    filter: drop-shadow(0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25));
+}
+
+.card > *{
+    margin: 0.3rem;
+}
+
+.card hr{
+    width: 40%;
+    border-color: rgb(0, 0, 0);
+}
+
+.card p{
+    font-weight: 400;
+    font-size: 0.6rem;
+    color: rgb(0, 0, 0);
+}
+
+.card p:first-child{
+    font-weight: 600;
+    font-size: 0.75rem;
+}
+
+.card h3{ 
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0);
+}
+
+.avatar{
+    height: 2.85rem;
+    width:  2.85rem;
+    background-color: rgba(1, 153, 109, 0.2);
+    border-radius: 50%;
+    background-image: url(/images/woman.png);
+}
+
