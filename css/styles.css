@@ -30,6 +30,7 @@ h2 {
     font-weight: 700;
     font-size: 2.5rem;
     line-height: 3.5rem;
+    margin: 0;
 }
 
 h3 {
@@ -80,6 +81,11 @@ section:nth-of-type(n+2):nth-of-type(odd) {
     padding: 4rem;
 }
 
+.content p:first-child{
+    margin: 0px;
+}
+
+
 
 /*---------------------------------------Styles for header block---------------------------------------*/
 
@@ -111,31 +117,26 @@ hr {
 
 /*---------------------------------------Styles for banner block---------------------------------------*/
 
-
-
 .banner {
     display: flex;
     align-items: center;
     width: 90%;
     height: 44.75rem;
     margin-left: 10%;
-    background-image: url(/images/banner.png);
-    /* закончить градиент */
+    background-image:linear-gradient(112.58deg, #FFFFFF 18.15%, rgba(255, 255, 255, 0) 53.07%),  url(/images/banner.png); /* под вопросом */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.banner .content {
-    inline-size: 22rem;
-}
-
 .banner .content h2 {
     font-size: 3.25rem;
+    inline-size: 22rem;
 }
 
 .banner .content p {
     font-weight: 400;
+    inline-size: 21rem;
 }
 
 
@@ -145,11 +146,17 @@ hr {
 .information {
     display: flex;
     align-items: center;
-    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: 9rem 0 3rem;
 }
 
-.information .content {
-    flex: 1 1 50%;
+.information .content{
+    inline-size: 29rem
+
+}
+
+.information p{
+    inline-size: 33.5rem;
 }
 
 .card-information {
