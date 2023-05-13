@@ -95,7 +95,7 @@ header {
     justify-content: space-evenly;
 }
 
-nav {
+header nav {
     display: flex;
     column-gap: 3.6rem;
     align-items: center;
@@ -123,7 +123,7 @@ hr {
     width: 90%;
     height: 44.75rem;
     margin-left: 10%;
-    background-image:linear-gradient(112.58deg, #FFFFFF 18.15%, rgba(255, 255, 255, 0) 53.07%),  url(images/banner.png); /* под вопросом */
+    background-image:linear-gradient(112.58deg, #FFFFFF 18.15%, rgba(255, 255, 255, 0) 53.07%),  url(/images/banner.png); /* под вопросом */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,7 +152,6 @@ hr {
 
 .information .content{
     inline-size: 29rem
-
 }
 
 .information p{
@@ -238,8 +237,9 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(images/video.png);
+    background-image: url(/images/video.png);
     background-repeat: no-repeat;
+    background-position: center;
     width: 44.75rem;
     height: 25.75rem;
     border-radius: 0.8rem;
@@ -252,7 +252,7 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5.75rem 0;
+    padding: 5.75rem 0 12rem;
 }
 
 .product-description {
@@ -279,7 +279,7 @@ hr {
     height: 28.65rem;
     width: 32rem;
     background-color: rgba(1, 153, 109, 0.2);
-    background-image: url(images/woman.png);
+    background-image: url(/images/woman.png);
     background-repeat: no-repeat;
     background-position: center bottom;
     border-radius: 0.9rem;
@@ -295,9 +295,8 @@ hr {
     border-radius:0.2rem;
     width: 14.5rem;
     height: 14.5rem;
-    text-align: center;
     background-color: var(--white);
-    filter: drop-shadow(0px 3.62249px 18.1125px rgba(165, 165, 165, 0.25));
+    filter: drop-shadow(0rem 0.18rem 0.9rem rgba(165, 165, 165, 0.25));
 }
 
 .card > *{
@@ -320,9 +319,21 @@ hr {
     font-size: 0.75rem;
 }
 
+
 .card h3{ 
     font-size: 0.8rem;
     color: rgb(0, 0, 0);
+}
+
+.card ul{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 0.525rem;
+    align-self: baseline;
+}
+
+.card li{
+    padding: 0.4rem 0;
 }
 
 .avatar{
@@ -330,6 +341,64 @@ hr {
     width:  2.85rem;
     background-color: rgba(1, 153, 109, 0.2);
     border-radius: 50%;
-    background-image: url(images/woman.png);
+    background-image: url(/images/woman.png);
+    background-size: cover
 }
 
+/*---------------------------------------Styles for footer block---------------------------------------*/
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color: var(--dark-green);
+    color: white;
+    justify-items: center;
+    padding: 5rem 0 2rem;
+}
+
+footer nav{
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+}
+
+footer nav a{
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+
+.nav-menu h1{
+    color: white;
+}
+
+.social-media{
+    display: flex;
+    align-items: flex-end;
+    column-gap: 2.5rem;
+}
+
+.media-element{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.15rem;
+    height: 3.8rem;
+    background-color: var(--white);
+    border-radius: 50%;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.media-element:nth-child(2){
+    background: conic-gradient(from 180deg at 50% 50%, #80A4CE 0deg, #C68BF0 100deg, #D164DA 150deg, #C963E8 22deg, #BFC2E8 258.75deg, #BAD0F1 330.13deg, #CED8CB 360deg);
+}
+
+.stores{
+    text-align: center;
+    align-self: flex-end;
+}
+
+.stores p{
+    color: var(--white);
+}
